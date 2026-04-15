@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<script>
+  // This reads the ID from the URL and sends the user to the Google Embed version
+  const params = new URLSearchParams(window.location.search);
+  const slideId = params.get('id');
+  if (slideId) {
+    window.location.replace("https://docs.google.com/presentation/d/" + slideId + "/embed?start=true");
+  }
+</script>
+</html>
